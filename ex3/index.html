@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercicio 3</title>
+</head>
+<body>
+    <h1>Vibrações</h1>
+    <p><button id="v1" onclick='v1()'>Primeira opção</button></p>
+    <p><button id="v2" onclick='v2()'>Segunda opção</button></p>
+    <p><button id="v3" onclick='v3()'>Terceira opção</button></p>
+
+    <script>
+        function v1(){
+            navigator.vibrate(200)
+        }
+        function v2(){
+            navigator.vibrate([200, 100, 200, 100])
+        }
+        function v3(){
+            navigator.vibrate([600, 200, 600, 200])
+        }
+    </script>
+</body>
+</html>
