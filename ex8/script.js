@@ -1,6 +1,6 @@
 var notificationsEnable = false
 
-function initNotifications(){
+window.onload = function(){
     if (window.Notification){
         Notification.requestPermission(function(permission){
             if(permission === 'granted'){
